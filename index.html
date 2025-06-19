@@ -22,17 +22,17 @@
 
     <section class="gallery">
         <h2>Nos créations</h2>
-        <div class="carousel">
-            <img src="braperle_Bambou.png" alt="braperle_Bambou">
-            <img src="braperle_blubird.png" alt="braperle_blubird">
-            <img src="braperle_bluplume.png" alt="braperle_bluplume">
-            <img src="braperle_greenkiwi.png" alt="braperle_greenkiwi">
-            <img src="braperle_greenlotus.png" alt="braperle_greenlotus">
-            <img src="braperle_pinkbird.png" alt="braperle_pinkbird">
-            <img src="braperle_pinkplum.png" alt="braperle_pinkplum">
-            <img src="braperle_redflam.png" alt="braperle_redflam">
-            <img src="braperlepastek.png" alt="braperlepastek">
-            <img src="braperlecha.png" alt="braperlecha">
+        <div class="slideshow-container">
+            <div class="mySlides fade"><img src="braperle_Bambou.png" alt="braperle_Bambou"></div>
+            <div class="mySlides fade"><img src="braperle_blubird.png" alt="braperle_blubird"></div>
+            <div class="mySlides fade"><img src="braperle_bluplume.png" alt="braperle_bluplume"></div>
+            <div class="mySlides fade"><img src="braperle_greenkiwi.png" alt="braperle_greenkiwi"></div>
+            <div class="mySlides fade"><img src="braperle_greenlotus.png" alt="braperle_greenlotus"></div>
+            <div class="mySlides fade"><img src="braperle_pinkbird.png" alt="braperle_pinkbird"></div>
+            <div class="mySlides fade"><img src="braperle_pinkplum.png" alt="braperle_pinkplum"></div>
+            <div class="mySlides fade"><img src="braperle_redflam.png" alt="braperle_redflam"></div>
+            <div class="mySlides fade"><img src="braperlepastek.png" alt="braperlepastek"></div>
+            <div class="mySlides fade"><img src="braperlecha.png" alt="braperlecha"></div>
         </div>
     </section>
 
@@ -49,5 +49,21 @@
     <footer>
         <p>&copy; 2025 Abracadaperle</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {{
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {{
+                slides[i].style.display = "none";
+            }}
+            slideIndex++;
+            if (slideIndex > slides.length) {{slideIndex = 1}}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2500);
+        }}
+    </script>
 </body>
 </html>

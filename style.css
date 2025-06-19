@@ -33,13 +33,26 @@ h1 {
     padding: 2em 1em;
 }
 
-.gallery img {
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 8px #d4af37;
+.slideshow-container {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    animation: fade 1.5s ease-in-out;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #d4af37, 0 0 25px #b57edc;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .btn {
