@@ -50,6 +50,28 @@ h1 {
     box-shadow: 0 0 15px #d4af37, 0 0 25px #b57edc;
 }
 
+.abracadaperle-banner {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 30px;
+  background: linear-gradient(90deg, #1f0a3c 0%, #d4af37 100%);
+  color: #fff5e6;
+  height: auto;
+  width: 100%;
+}
+
+.abracadaperle-logo {
+  max-height: 200px;
+  margin-right: 40px;
+}
+
+.abracadaperle-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
