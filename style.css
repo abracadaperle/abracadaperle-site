@@ -36,7 +36,7 @@ h1 {
 .slideshow-container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -47,7 +47,7 @@ h1 {
 
 .mySlides img {
     width: 100%;
-    max-height: 600px;
+    max-height: 700px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 0 15px #d4af37, 0 0 25px #b57edc;
