@@ -47,7 +47,7 @@ h1 {
 
 .mySlides img {
     width: 100%;
-    max-height: 500px;
+    max-height: 800px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 0 15px #d4af37, 0 0 25px #b57edc;
